@@ -1,34 +1,24 @@
-* {
+ /* my color choices for myPortfolio
+  blue #00ADB5
+  grey #393E46
+  black #222831
+  white #EEEEEE */
+  
+  * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
-  /* my blue #00ADB5
-  my grey #393E46
-  my black #222831
-  my white #EEEEEE */
-}
-
-#active {
-  padding: 10px;
-  border: none;
-  border-radius: 50px;
-  background-color: black;
-}
-
-li, a {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #EEEEEE;
-  text-decoration: none;
+  color: #393E46;
 }
 
 header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px 10%;
+  padding: 30px 2%;
   background-color: #393E46;
 }
 
@@ -57,29 +47,23 @@ header {
 .nav_links {
   list-style: none;
 }
+
 .nav_links li {
   display: inline-block;
-  padding: 0px 20px;
-}
-
-.nav_links li a {
-  padding: 10px;
-  border: none;
   border-radius: 50px;
-  transition: all 0.3s ease 0s;
+  padding: 10px;
+  transition: all .3s ease 0s;
 }
 
-.nav_links li a:hover {
+.nav_links li:hover {
   background-color:black;
-  animation-name: spin;
-  animation-duration: 1s;  
-  animation-iteration-count: 1;
-  animation-timing-function: ease; 
 }
 
-@media screen and (max-width: 400px) {
-    nav a {
-      text-align: center;
-      float: none;
-    }
+li, a {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+
+li a#home {
+  border-bottom: #00ADB5 3px solid;
 }
